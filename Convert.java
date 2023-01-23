@@ -12,7 +12,7 @@ public class Convert{
       temp = Double.valueOf(temperature);
       if(!(scale == currentScale)){
          if(scale == 'F'){
-            temp = temp*(1.8) + 32;
+            temp = temp * (1.8) + 32;
          }
          else{
             temp = (temp - 32) * (5/9);
