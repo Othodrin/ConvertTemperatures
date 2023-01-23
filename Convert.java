@@ -15,9 +15,12 @@ public class Convert{
             temp = temp * (1.8) + 32;
          }
          else{
-            temp = (temp - 32) * (5/9);
+            temp = temp - 32 * (5/9);
          }
       }
       return temp;
+   }
+   public static void main (String[] args){
+      System.out.println(convert("50F", 'C'));
    }
 }
