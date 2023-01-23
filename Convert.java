@@ -20,7 +20,4 @@ public class Convert{
       }
       return temp;
    }
-   public static void main (String[] args){
-      System.out.println(convert("50F", 'C'));
-   }
 }
