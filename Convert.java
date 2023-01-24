@@ -18,6 +18,8 @@ public class Convert{
             temp = temp - 32 * (5/9);
          }
       }
+      if(currentScale == 'C' && temp < -273.15) temp = -273.15;
+      if(currentScale == 'F' && temp < -459.67) temp = -459.67;
       return temp;
    }
 }
