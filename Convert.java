@@ -21,7 +21,6 @@ public class Convert{
       }
       if(scale == 'C' && temp < -273.15) temp = -273.15;
       if(scale == 'F' && temp < -459.67){
-         System.out.println("hi");
          temp = -459.67;
       }
       return temp;
