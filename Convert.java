@@ -12,14 +12,18 @@ public class Convert{
       temp = Double.valueOf(temperature);
       if(!(scale == currentScale)){
          if(scale == 'F'){
-            temp = temp * (1.8) + 32;
+            temp = temp * 1.8 + 32;
          }
          else{
-            temp = temp - 32 * (5/9);
+            System.out.println(currentScale + " , " + scale);
+            temp = (temp - 32) * 5 / 9;
          }
       }
-      if(currentScale == 'C' && temp < -273.15) temp = -273.15;
-      if(currentScale == 'F' && temp < -459.67) temp = -459.67;
+      if(scale == 'C' && temp < -273.15) temp = -273.15;
+      if(scale == 'F' && temp < -459.67){
+         System.out.println("hi");
+         temp = -459.67;
+      }
       return temp;
    }
 }
